@@ -65,7 +65,7 @@ class ProdukController extends Controller
 
 
         //cara memfilter melalui nama
-        //$data['list_produk'] = Produk::where('nama', 'like', "%$nama%")->get();
+        $data['list_produk'] = Produk::where('nama', 'like', "%$nama%")->get();
         //cara mefilter lebih dari 1 nama
         //$data['list_produk'] = Produk::whereIn('stok', $stok)->get();
         //cara memfilter harga terendah dan tertinggi
