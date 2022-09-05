@@ -55,6 +55,7 @@
                                 <th>Stok</th>
                             </thead>
                             <tbody>
+
                                 @foreach ($list_produk as $produk)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
